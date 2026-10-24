@@ -1,0 +1,16 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+
+html,body,#root{height:100%;margin:0}body{background:#05060a;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent;overscroll-behavior:none;user-select:none}
+#root{display:flex;justify-content:center;align-items:center}
+.ph{width:min(390px,100vw);height:min(844px,100dvh);position:relative;overflow:hidden;background:var(--bg);color:var(--tx);transition:background .4s}
+@media(min-width:420px){.ph{border-radius:36px;box-shadow:0 0 0 1px #222,0 30px 80px #000}}
+.g{background:var(--card);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--bd);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.sc{overflow-y:auto;scrollbar-width:none;contain:strict}.sc::-webkit-scrollbar{display:none}
+.pr{transition:transform .25s cubic-bezier(.34,1.56,.64,1)}.pr:active{transform:scale(.93)}
+.cv{content-visibility:auto;contain-intrinsic-size:110px}
+.tl{border-radius:var(--r)}
+.gb{background:linear-gradient(135deg,var(--p),var(--p2))}
+@keyframes fade{from{opacity:0}}@keyframes pop{from{transform:scale(.2);opacity:0}}@keyframes up{from{transform:translateY(100%)}}
+@keyframes bar{from{width:0}to{width:100%}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes rip{from{transform:scale(0);opacity:.6}to{transform:scale(5);opacity:0}}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px -8px var(--p)}50%{box-shadow:0 10px 44px -2px var(--p)}}@keyframes sl{from{transform:translateY(-30px);opacity:0}}
+.lite *,.lite *::before{animation:none!important;transition:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important}
